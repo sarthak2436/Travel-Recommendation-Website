@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v1.2.0/maptiler-sdk.umd.min.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v1.2.0/maptiler-sdk.css" rel="stylesheet" />
+    <link rel="stylesheet" href="nextpage.css">
+    <link rel="stylesheet" href="popupppp.css">
+    <title>Travelling Website</title>
+</head>
+
+<body>
+    <div id="blur">
+        <header>
+           
+            <div class="left">
+                <div>GLOBE GURU</div>
+                <img src="./images/travel.png">
+    
+            </div>
+        </header>
+    
+        <div class="banner">
+            <div class="box">
+                <div class="content active">
+                    
+                 
+                    <h1 class="movie">Australia</h1>
+                    <h6>
+                        <span>Country</span><span><i>city </i></span><span>explore</span><span>weather</span>
+                    </h6>
+                    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quisquam illum ullam odio aperiam
+                        tempore quo corrupti ab sed? Repudiandae incidunt, corporis non exercitationem explicabo iusto iste
+                        veniam assumenda sequi?</p1>
+                    <div class="button">
+                       
+                        <a href="#" onclick="toggleWatchPopup();">INfo</a>
+                        <a href="#" onclick="toggleMapPopup();">Map <i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="carousel-box">
+                <div class="carousel">
+                    <div class="carousel-item"
+                        onClick="changeBg('bg-jonathan-kho-ming-jun-1GmWVoBwQTU-unsplash.jpeg', 'jonathan-kho-ming-jun-1GmWVoBwQTU-unsplash');">
+                        <img src="./carouselimages/ca1.png" alt="">
+                    </div>
+                    <div class="carousel-item"
+                        onClick="changeBg('bg-clay-banks-DJbGRRpjLuY-unsplash.jpeg', 'clay-banks-DJbGRRpjLuY-unsplash');">
+                        <img src="./carouselimages/ca2.png" alt="">
+                    </div>
+                    <div class="carousel-item"
+                        onClick="changeBg('bg-jonathan-kho-ming-jun-1GmWVoBwQTU-unsplash.jpeg', 'jonathan-kho-ming-jun-1GmWVoBwQTU-unsplash');">
+                        <img src="./carouselimages/ca3.jpg" alt="">
+                    </div>
+                    <div class="carousel-item"
+                        onClick="changeBg('bg-alex-azabache-gQWR0-qBPEo-unsplash.jpeg', 'alex-azabache-gQWR0-qBPEo-unsplash.jpg');">
+                        <img src="./carouselimages/ca4.png" alt="">
+                    </div>
+                    <div class="carousel-item"
+                        onClick="changeBg('bg-alex-azabache-gQWR0-qBPEo-unsplash.jpeg', 'alex-azabache-gQWR0-qBPEo-unsplash.jpg');">
+                        <img src="./carouselimages/ca5.png" alt="">
+                    </div>
+                    <div class="carousel-item"
+                        onClick="changeBg('bg-alex-azabache-gQWR0-qBPEo-unsplash.jpeg', 'alex-azabache-gQWR0-qBPEo-unsplash.jpg');">
+                        <img src="./carouselimages/ca6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <a href="#" class="play" onclick="toggleVideo();">
+            <i class="fa-regular fa-circle-play">Watch</i>
+        </a>
+    
+        <ul class="sci">
+        
+            <li><a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a></li>
+            <li><a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+    
+        <div class="trailer">
+            <video src="./nextpage images/sample-5s.mp4" muted controls="true" autoplay="true"></video>
+            <img src="./nextpage images/icons8-close-24.png" alt="" class="close" onclick="toggleVideo();" />
+        </div>
+    </div>
+    <div id="popup">
+        <div class="heading1">Pros</div>
+        <div class="heading2">Cons</div>
+
+        <div class="section-main">
+            <div class="vertical-line"></div>
+            
+            <div class="flex-container">
+                <div class="pros">&#9989; Very safe</div>
+                <div class="pros">&#9989; Fast Internet</div>
+                <div class="pros">&#9989; Spacious and not crowded</div>
+                <div class="pros">&#9989; High quality of education</div>
+                <div class="pros">&#9989; Good hospitals</div>
+                <div class="pros">&#9989; Great freedom of speech</div>
+                <div class="pros">&#9989; Democratic</div>
+                <div class="pros">&#9989; Everyone speaks English</div>
+                <div class="pros">&#9989; Good air quality on average</div>
+            </div>
+            <div class="flex-container2">
+                <div class="pros">&#10060; Way too expensive</div>
+                <div class="pros">&#10060; Not much to do</div>
+                <div class="pros">&#10060; Very Sweaty and Humid</div>
+            </div>
+            
+        </div>
+            
+        <div class="close-image">
+            <img src="./nextpage images/icons8-close-24.png" alt="" onclick="toggleWatchPopup()" />
+        </div>
+    </div>
+    <div id="popup2">
+        <div class="heading3">GlobeGuru's Guide</div>
+        <div class="section2-main">
+            <div class="vertical-line"></div>
+            
+            <div class="flex-container">
+                <div class="pros">&#9989; Cost of living for traveler<span class="detail">$4,248 / month</span></div>
+                <div class="pros">&#9989; Hotel (median price)<span class="detail"> $2,015 / month</span></div>
+                <div class="pros">&#9989; Taxi price (avg trip ~3km/2mi)<span class="detail">$6.70 / trip</span></div>
+                <div class="pros">&#9989; Mobile data (~10GB) <span class="detail"> $60 / month</span></div>
+                <div class="pros">&#9989; Estimated tax on $100,000 <span class="detail"> $27,512</span></div>
+                <div class="pros">&#9989; International school <span class="detail"> $15,467 / year</span></div>
+                <div class="pros">&#9989; Weather(now) <span class="detail">🌥 29°C </span></div>
+                
+                <div class="pros">&#9989; Internet speed (avg) <span class="detail"> 25 Mbps</span></div>
+                <div class="pros">&#9989; Population <span class="detail"> 140,000 people</span></div>
+                <div class="pros">&#9989; Gender ratio (population) <span class="detail"> 👨 48% 👱‍♀️ 52%</span></div>
+            </div>
+            <div id="map"></div>
+            
+        </div>
+        <div class="close2-image">
+            <img src="./nextpage images/icons8-close-24.png" alt="" onclick="toggleMapPopup()" />
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+    <script src="video.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+
+        function toggleWatchPopup() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+        function toggleMapPopup() {
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup2');
+            popup.classList.toggle('active');
+        }
+    </script>
+    <script>
+        maptilersdk.config.apiKey = 'Ol4LAzMBCcj1Pqib0y9a';
+        const map = new maptilersdk.Map({
+          container: 'map', 
+          style: "streets-v2",
+          center: [16.62662018, 49.2125578], 
+          zoom: 14, 
+        });
+    </script>
+</body>
+
+</html>
