@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelling Website</title>
+
+  
+    <link rel="stylesheet" href="style.css">
+
+   
+    <link rel="icon" type="image/png" href="images/logo.png">
+   
+
+</head>
+
+<body>
+  
+    <nav class="navbar">
+        <div class="left">
+            <div>GLOBE GURU</div>
+            <img src="./images/travel.png">
+
+        </div>
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#">Home</a></li>
+            <li class="nav-items"><a href="#">Blogs</a></li>
+            <li class="nav-items"><a href="#">Reviews</a></li>
+            <li class="nav-items"><a href="#">About Us</a></li>
+            <li onclick="openPage2()" class="nav-items"><a href="#">Currency Converter</a></li>
+            
+        </ul>
+        <div class="right-container">
+            <input type="text" placeholder="search" class="search-box">
+            
+            <a href="#" class="login-link">login</a>
+        </div>
+    </nav>
+   
+    
+    <div class="carousel-container">
+        <div class="carousel">
+        </div>
+    </div>
+
+    <div class="video-card-container">
+       
+        <div class="video-card">
+            <img src="./images/Asia.png" alt="" class="video-card-image">
+            <video src="./videos/asia video.mp4" class="card-video"></video>
+        </div>
+       
+        <div class="video-card">
+            <img src="./images/europe.png" alt="" class="video-card-image">
+            <video src="./videos/europe.mp4" class="card-video"></video>
+        </div>
+       
+        <div class="video-card">
+            <img src="./images/africa.png" alt="" class="video-card-image">
+            <video src="./videos/africa video.mp4" class="card-video"></video>
+        </div>
+      
+        <div class="video-card">
+            <img src="./images/australia.png" alt="" class="video-card-image">
+            <video src="./videos/australia video.mp4" class="card-video"></video>
+        </div>
+       
+        <div class="video-card">
+            <img src="./images/america.png" alt="" class="video-card-image">
+            <video src="./videos/america.mp4" class="card-video"></video>
+        </div>
+       
+    </div>
+   
+    <h1 class="title">trending places</h1>
+   
+
+    <div class="movies-list">
+        <button class="pre-btn"><img src="./images/pre.png" alt=""></button>
+        <button class="nxt-btn"><img src="./images/nxt.png" alt=""></button>
+        <div class="card-container">
+        
+            <div class="card">
+                <img src="./images/poster 111.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Bankok</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out <img src="./images/plane.png" alt="" class="icon6"></button>
+                </div>
+            </div>
+           
+            <div class="card">
+                <img src="./images/poster222.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Australia</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur</h6>
+                    <button  onclick="openPage()" class="watchlist-btn">check out</button>
+                </div>
+            </div>
+         
+            <div class="card">
+                <img src="./images/poster333.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">brazil</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="./images/poster444.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">toronto</h2>
+                    <h6 class="des">Canada</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+      
+            <div class="card">
+                <img src="./images/poster555.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Los Angeles</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="./images/poster666.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Dubai</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+         
+            <div class="card">
+                <img src="./images/poster777.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Riyadh</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster888.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Tokyo</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="./images/poster999.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Chiang Mai</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster1111.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">seoul</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="./images/poster2222.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">hong kong</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+       
+            <div class="card">
+                <img src="./images/poster3333.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Barcelona</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+   
+    <h1 class="title">Recommended places</h1>
+  
+
+   
+    <div class="movies-list">
+        <button class="pre-btn"><img src="./images/pre.png" alt=""></button>
+        <button class="nxt-btn"><img src="./images/nxt.png" alt=""></button>
+        <div class="card-container">
+        
+            <div class="card">
+                <img src="./images/poster v1.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">ho chi minh city</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster v2.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">kathmandu</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+           
+            <div class="card">
+                <img src="./images/poster v3.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">bali</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster v4.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Istanbul</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster v5.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">penang</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster v6.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Athens</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+           
+            <div class="card">
+                <img src="./images/poster v7.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Medellín</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="./images/poster v8.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Helsinki</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+       
+            <div class="card">
+                <img src="./images/poster v9.jpg" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Amsterdam</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+   
+            <div class="card">
+                <img src="./images/poster v10.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Yerevan</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+  
+            <div class="card">
+                <img src="./images/poster v11.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Cuenca</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+     
+            <div class="card">
+                <img src="./images/poster v12.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Cape Town</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+   
+    <h1 class="title">New Cities</h1>
+   
+
+   
+    <div class="movies-list">
+        <button class="pre-btn"><img src="./images/pre.png" alt=""></button>
+        <button class="nxt-btn"><img src="./images/nxt.png" alt=""></button>
+        <div class="card-container">
+           
+            <div class="card">
+                <img src="./images/poster L1.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Havana</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+         
+            <div class="card">
+                <img src="./images/poster L2.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Madrid</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster L3.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Singapore</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+           
+            <div class="card">
+                <img src="./images/poster L4.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Stockholm</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+           
+            <div class="card">
+                <img src="./images/poster L5.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Queenstown</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster L6.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Brussels</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+          
+            <div class="card">
+                <img src="./images/poster L7.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Palermo</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="./images/poster L8.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Haikou</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="./images/poster L9.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Ottawa</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="./images/poster L10.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Christchurch</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+           
+            <div class="card">
+                <img src="./images/poster L11.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Brampton</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+           
+            <div class="card">
+                <img src="./images/poster L12.png" alt="" class="card-img">
+                <div class="card-body">
+                    <h2 class="name">Paris</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="watchlist-btn">check out</button>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+   
+
+    
+    <script src="slider-data.js"></script>
+    <script src="app.js"></script>
+    
+
+</body>
+
+</html>
