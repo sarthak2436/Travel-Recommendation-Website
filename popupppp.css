@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #17b3ab7c;
+    transition: 0.5px;
+    padding: 20px;
+}*/
+
+#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/*.container .content {
+    position: relative;
+    max-width: 800px;
+}*/
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/*.container .content img {
+    max-width: 100%;
+    display: block;
+}*/
+
+
+#popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    border-radius: 7px;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    padding: 50px;
+    color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #0c1110;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}
+
+#popup h2 {
+    color: white;
+}
+
+.close-image {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    filter: invert(1);
+    cursor: pointer;
+    max-width: 30px;
+    z-index: 9;
+}
+
+/* Add these styles to your existing CSS */
+
+/*#popup .popup-content {
+    position: relative;
+    width: 100%;
+}
+
+#popup.active .popup-content {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    margin: 0;
+}*/
+/*.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    top: -40px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    background: none;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin: 0 25px;
+}
+
+.navbar a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px; /* Reduced thickness 
+    background-color:#ff3700;
+    transition: width 0.3s ease;
+    border-radius: 50px;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    left: 50%; /* Center the underline 
+    transform: translateX(-50%);
+    
+}
+.navbar a:hover,.navbar a.active {
+    color: #ff3700;
+}*/
+.section-main{
+    border-top: 1px solid white;
+    border-bottom: none;
+    border-left: none;
+    height: 0px;
+    width: 900px;
+    position: relative;
+    left: -50px;
+    top: -11px;
+    display: flex;
+}
+.section2-main{
+    border-top: 1px solid white;
+    border-bottom: none;
+    border-left: none;
+    height: 0px;
+    width: 900px;
+    position: relative;
+    left: -50px;
+    top: -11px;
+    display: flex;
+}
+
+/*------*/
+/* Add this to your CSS file */
+/* Add this to your CSS file */
+
+/* Add this to your CSS file */
+
+/* Add this to your CSS file (e.g., popup.css or main.css) */
+#popup2 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    border-radius: 7px;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+    padding: 50px;
+    color: white;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #0e0c11;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup2.active {
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}
+
+#popup2 h2 {
+    color: white;
+}
+
+.close2-image {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    filter: invert(1);
+    cursor: pointer;
+    max-width: 30px;
+    z-index: 9;
+}
+.heading1{
+    display: inline-block;
+    font-size:24px ;
+    font-weight: 200;
+    position: absolute;
+    top: 0px;
+    left: 176px;
+
+}
+.heading2{
+    display: inline-block;
+    font-size:24px ;
+    font-weight: 200;
+    position: absolute;
+    top: 1px;
+    right: 176px;
+
+}
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    right: 234px;
+    height: 25vh; /* Set the height of the container */
+  }
+.detail{
+    position: fixed;
+    left: 324px;
+}
+.heading3{
+    display: inline-block;
+    font-size:20px ;
+    font-weight: 200;
+    position: absolute;
+    top: 0px;
+    left: 340px;
+
+}
+
+
+
+
+
+
+
+
